@@ -69,11 +69,11 @@
                 </div>
                 <p class="lead mb-5">Web developer in training, currently studying at Coder Foundry. <br /> Teachable, young and willing to take on challenges. <br /> In addition to coding, I have experience in warehouse order fulfillment and independently wrestle as a hobby.</p>
                 <div class="social-icons">
-                    
+
                     <a href="#">
                         <i class="fab fa-github"></i>
                     </a>
-                    
+
 
                 </div>
             </div>
@@ -87,7 +87,7 @@
 
                 <p>Check back here in the future, as I will add examples of my work as I complete it.</p>
 
-                </div>
+            </div>
 
         </section>
 
@@ -124,7 +124,39 @@
                             </div>
 
                             <div class="modal-body">
-                                Test text
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <p id="fbintro">Please enter two numbers between 1 and 100.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <input id="fbnum1" type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <input id="fbnum2" type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5">
+                                            <button class="btn btn-success" id="FBSolveButton">Solve FizzBuzz</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-success" id="FBClearButton">Clear</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-secondary" id="FBCodeButton">Show Code</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p id="fboutput"></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="modal-footer">
@@ -145,7 +177,31 @@
                             </div>
 
                             <div class="modal-body">
-                                Test text
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p id="tacointro">Type a word to determine whether or not it is a palindrome.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <input id="tacoinput" type="text" class="form-control" />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <button class="btn btn-success" id="TacoSubmitButton">Submit</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-success" id="TacoClearButton">Clear</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p id="tacooutput"></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="modal-footer">
@@ -166,7 +222,47 @@
                             </div>
 
                             <div class="modal-body">
-                                Test text
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <p id="sunsetintro">Let's find out which buildings can see the sunset.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input id="sunsetnum1" type="text" class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            <input id="sunsetnum2" type="text" class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            <input id="sunsetnum3" type="text" class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            <input id="sunsetnum4" type="text" class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            <input id="sunsetnum5" type="text" class="form-control" />
+                                        </div>
+                                        <div class="col">
+                                            <input id="sunsetnum6" type="text" class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <button class="btn btn-success" id="SunsetSolveButton">Solve Sunset Hills</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-success" id="SunsetClearButton">Clear</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p id="sunsetoutput"></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="modal-footer">
@@ -200,7 +296,7 @@
 
             </div>
 
-            
+
         </section>
 
         <hr class="m-0">
@@ -236,6 +332,145 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
 
+    <script>
+        $("#FBSolveButton").on("click", function () {
+            var fizz = Number($("#fbnum1").val());
+            var buzz = Number($("#fbnum2").val());
+
+            var fbArray = "";
+
+            if (fizz > 100 || buzz > 100) {
+                alert("Number entered too high.")
+                return
+            }
+
+            if (fizz < 1 || buzz < 1) {
+                alert("Number entered too low.")
+                return
+            }
+
+            for (loop = 1; loop < 101; loop++) {
+                if ((loop % fizz == 0) && (loop % buzz == 0)) {
+                    if (loop == 100) {
+                        fbArray += "<b>FizzBuzz</b>";
+                    }
+                    else {
+                        fbArray += "<b>FizzBuzz</b>" + ", ";
+                    }
+                }
+
+                else if (loop % fizz == 0) {
+                    if (loop == 100) {
+                        fbArray += "<i>Fizz</i>";
+                    }
+                    else {
+                        fbArray += "<i>Fizz</i>" + ", ";
+                    }
+                }
+
+                else if (loop % buzz == 0) {
+                    if (loop == 100) {
+                        fbArray += "<i>Buzz</i>";
+                    }
+                    else {
+                        fbArray += "<i>Buzz</i>" + ", ";
+                    }
+                }
+
+                else {
+                    if (loop == 0) {
+                        fbArray += loop;
+                    }
+                    fbArray += loop + ", ";
+                }
+
+            }
+
+            $("#fboutput").show()
+            $("#fboutput").html(`${fbArray}`);
+
+            $("#FBClearButton").on("click", function () {
+                var fizz = Number($("#fbnum1").val(""));
+                var buzz = Number($("#fbnum2").val(""));
+                $("#fboutput").hide()
+            })
+        });
+    </script>
+
+    <script>
+        $("#SunsetSolveButton").on("click", function () {
+            let sunsetArray = new Array();
+            sunsetArray.push(Number($("#sunsetnum1").val()));
+            sunsetArray.push(Number($("#sunsetnum2").val()));
+            sunsetArray.push(Number($("#sunsetnum3").val()));
+            sunsetArray.push(Number($("#sunsetnum4").val()));
+            sunsetArray.push(Number($("#sunsetnum5").val()));
+            sunsetArray.push(Number($("#sunsetnum6").val()));
+
+            let tallest = sunsetArray[0];
+            let sunsetArray2 = new Array();
+            sunsetArray2.push(tallest);
+
+            for (var loop = 1; loop < sunsetArray.length; loop++) {
+
+                if (sunsetArray[loop] > tallest) {
+                    tallest = sunsetArray[loop];
+                    sunsetArray2.push(tallest);
+                }
+            };
+
+            $("#sunsetoutput").html(`The buildings heights of: ${sunsetArray2} can see the sunset.`)
+
+
+        });
+    </script>
+
+    <script>
+        $("#TacoSubmitButton").on("click", function () {
+            var str = ($("#tacoinput").val());
+
+            if (str == "") {
+                alert("No data entered.")
+                return
+            }
+
+            var enteredText = str.toLowerCase();
+
+            enteredText = enteredText.replace(/ /g, "");
+            var length = enteredText.length;
+
+            var last = length - 1;
+
+            var enteredTextRev = "";
+
+            for (loop = last; loop >= 0; loop--) {
+                enteredTextRev += enteredText[loop];
+            }
+
+            var results;
+
+            if (enteredText === enteredTextRev) {
+                results = `${str} is a palindrome!`
+            }
+
+            else {
+                results = `${str} is <u>not</u> a palindrome!`
+            }
+
+
+
+
+            $("#tacooutput").show();
+            $("#tacooutput").html(`${results}`);
+
+            $("#ClearButton").on("click", function () {
+                var str = ($("#input").val(""));
+                $("#tacooutput").hide();
+
+            })
+        });
+
+    </script>
 </body>
 
 </html>
