@@ -38,7 +38,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#header">Header</a>
+                    <a class="nav-link js-scroll-trigger" href="#header">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -55,7 +58,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0" id="portbackground">
 
         <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="header">
             <div class="w-100">
@@ -70,7 +73,7 @@
                 <p class="lead mb-5">Web developer in training, currently studying at Coder Foundry. <br /> Teachable, young and willing to take on challenges. <br /> In addition to coding, I have experience in warehouse order fulfillment and independently wrestle as a hobby.</p>
                 <div class="social-icons">
 
-                    <a href="#">
+                    <a href="https://github.com/enan93" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
 
@@ -81,11 +84,36 @@
 
         <hr class="m-0">
 
+        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="skills">
+            <div class="w-100">
+                <h2 class="mb-5">Skills</h2>
+
+                <div class="subheading mb-3">Programming Languages</div>
+                <ul class="list-inline dev-icons">
+                    <li class="list-inline-item">
+                        <i class="fab fa-html5"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-css3-alt"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-js-square"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fab fa-bootstrap"></i>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="portfolio">
             <div class="w-100">
                 <h2 class="mb-5">Portfolio</h2>
 
-                <p>Check back here in the future, as I will add examples of my work as I complete it.</p>
+                <p>Check back periodically in the future, as projects will be added to this area upon their completion.</p>
 
             </div>
 
@@ -98,19 +126,39 @@
                 <h2 class="mb-5">Coding Challenges</h2>
 
                 <div class="row">
-                    <div class="col">
-                        <button class="btn btn-success" data-toggle="modal" data-target="#challengemodal1" id="modalbtn">FizzBuzz</button>
+                    <div class="col-3">
+                        <div class="row">
+                            <h4>FizzBuzz</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/fizzbuzz.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal1" id="modalbtn1">
+                        </div>
                     </div>
                     <div class="col">
-                        <button class="btn btn-success" data-toggle="modal" data-target="#challengemodal2" id="modalbtn">TacoCat</button>
+                        <div class="row">
+                            <h4>TacoCat</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/tacocat.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal2" id="modalbtn2">
+                        </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col">
-                        <button class="btn btn-success" data-toggle="modal" data-target="#challengemodal3" id="modalbtn">Sunset Hills</button>
+                    <div class="col-3">
+                        <div class="row">
+                            <h4>Sunset Hills</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/sunset.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal3" id="modalbtn3">
+                        </div>
                     </div>
                     <div class="col">
-                        <button class="btn btn-success" data-toggle="modal" data-target="#challengemodal4" id="modalbtn">Sum of All Fears</button>
+                        <div class="row">
+                            <h4>Sum of All Fears</h4>
+                        </div>
+                        <div class="row">
+                            <img src="img/sumfears.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal4" id="modalbtn4">
+                        </div>
                     </div>
                 </div>
 
@@ -126,18 +174,20 @@
                             <div class="modal-body">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col">
                                             <p id="fbintro">Please enter two numbers between 1 and 100.</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-3">
                                             <input id="fbnum1" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-3">
                                             <input id="fbnum2" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                     </div>
                                     <div class="row">
@@ -148,7 +198,7 @@
                                             <button class="btn btn-outline-success" id="FBClearButton">Clear</button>
                                         </div>
                                         <div class="col">
-                                            <button class="btn btn-secondary" id="FBCodeButton">Show Code</button>
+                                            <!--<button class="btn btn-secondary" id="FBCodeButton">Show Code</button>-->
                                         </div>
                                     </div>
                                     <div class="row">
@@ -160,7 +210,7 @@
                             </div>
 
                             <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <button class="btn btn-dark" data-dismiss="modal">Close</button>
                             </div>
 
                         </div>
@@ -186,10 +236,11 @@
                                     <div class="row">
                                         <div class="col-3">
                                             <input id="tacoinput" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col">
+                                        <div class="col-3">
                                             <button class="btn btn-success" id="TacoSubmitButton">Submit</button>
                                         </div>
                                         <div class="col">
@@ -205,7 +256,7 @@
                             </div>
 
                             <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <button class="btn btn-dark" data-dismiss="modal">Close</button>
                             </div>
 
                         </div>
@@ -231,21 +282,27 @@
                                     <div class="row">
                                         <div class="col">
                                             <input id="sunsetnum1" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                         <div class="col">
                                             <input id="sunsetnum2" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                         <div class="col">
                                             <input id="sunsetnum3" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                         <div class="col">
                                             <input id="sunsetnum4" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                         <div class="col">
                                             <input id="sunsetnum5" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                         <div class="col">
                                             <input id="sunsetnum6" type="text" class="form-control" />
+                                            <br />
                                         </div>
                                     </div>
 
@@ -266,7 +323,7 @@
                             </div>
 
                             <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <button class="btn btn-dark" data-dismiss="modal">Close</button>
                             </div>
 
                         </div>
@@ -283,11 +340,58 @@
                             </div>
 
                             <div class="modal-body">
-                                Test text
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col">
+                                            <p id="soaftitle">Enter a sum number, then enter up to 5 numbers and determine if any combination of two of those numbers will add up to your sum.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input id="soaftopnum" type="text" class="form-control" placeholder="Please enter your sum number." />
+                                            <br />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <input id="soafnum1" type="text" class="form-control" />
+                                            <br />
+                                        </div>
+                                        <div class="col">
+                                            <input id="soafnum2" type="text" class="form-control" />
+                                            <br />
+                                        </div>
+                                        <div class="col">
+                                            <input id="soafnum3" type="text" class="form-control" />
+                                            <br />
+                                        </div>
+                                        <div class="col">
+                                            <input id="soafnum4" type="text" class="form-control" />
+                                            <br />
+                                        </div>
+                                        <div class="col">
+                                            <input id="soafnum5" type="text" class="form-control" />
+                                            <br />
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <button class="btn btn-success" id="SOAFSubmitBtn">Submit</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-success" id="SOAFClearBtn">Clear</button>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <p id="soafoutput"></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="modal-footer">
-                                <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <button class="btn btn-dark" data-dismiss="modal">Close</button>
                             </div>
 
                         </div>
@@ -419,9 +523,18 @@
                 }
             };
 
-            $("#sunsetoutput").html(`The buildings heights of: ${sunsetArray2} can see the sunset.`)
+            $("#sunsetoutput").show()
+            $("#sunsetoutput").html(`The buildings with heights of: ${sunsetArray2} can see the sunset.`)
 
-
+            $("#SunsetClearButton").on("click", function () {
+                Number($("#sunsetnum1").val(""));
+                Number($("#sunsetnum2").val(""));
+                Number($("#sunsetnum3").val(""));
+                Number($("#sunsetnum4").val(""));
+                Number($("#sunsetnum5").val(""));
+                Number($("#sunsetnum6").val(""));
+                $("#sunsetoutput").hide()
+            })
         });
     </script>
 
@@ -463,14 +576,60 @@
             $("#tacooutput").show();
             $("#tacooutput").html(`${results}`);
 
-            $("#ClearButton").on("click", function () {
-                var str = ($("#input").val(""));
+            $("#TacoClearButton").on("click", function () {
+                var str = ($("#tacoinput").val(""));
                 $("#tacooutput").hide();
 
             })
         });
 
     </script>
+
+    <script>
+        $("#SOAFSubmitBtn").on("click", function () {
+            let topnum = Number($("#soaftopnum").val());
+
+            let soafArray = [];
+            soafArray.push(Number($("#soafnum1").val()));
+            soafArray.push(Number($("#soafnum2").val()));
+            soafArray.push(Number($("#soafnum3").val()));
+            soafArray.push(Number($("#soafnum4").val()));
+            soafArray.push(Number($("#soafnum5").val()));
+
+            let sumfears = 0;
+            let found = false;
+
+            for (var loop = 0; loop < soafArray.length; loop++) {
+
+                sumfears = topnum - soafArray[loop];
+
+                if (soafArray.indexOf(sumfears, loop + 1) > 0) {
+                    found = true;
+                    break;
+                }
+
+
+            }
+
+            $("#soafoutput").show()
+
+            if (found)
+                $("#soafoutput").html(`The sum of ${topnum} was found in the numbers entered.`);
+            else
+                $("#soafoutput").html(`The sum of ${topnum} was <u>not</u> found in the numbers entered.`);
+
+            $("#SOAFClearBtn").on("click", function () {
+                Number($("#soaftopnum").val(""));
+                Number($("#soafnum1").val(""));
+                Number($("#soafnum2").val(""));
+                Number($("#soafnum3").val(""));
+                Number($("#soafnum4").val(""));
+                Number($("#soafnum5").val(""));
+                $("#soafoutput").hide()
+            })
+        });
+    </script>
+
 </body>
 
 </html>

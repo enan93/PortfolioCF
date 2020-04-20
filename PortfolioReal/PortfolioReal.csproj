@@ -69,6 +69,10 @@
   <ItemGroup>
     <Content Include="css\resume.css" />
     <Content Include="css\resume.min.css" />
+    <Content Include="img\fizzbuzz.jpg" />
+    <Content Include="img\sumfears.jpg" />
+    <Content Include="img\sunset.jpg" />
+    <Content Include="img\tacocat.jpg" />
     <Content Include="index.html" />
     <Content Include="js\resume.js" />
     <Content Include="js\resume.min.js" />
