@@ -70,12 +70,18 @@
     <Content Include="css\resume.css" />
     <Content Include="css\resume.min.css" />
     <Content Include="img\fizzbuzz.jpg" />
+    <Content Include="img\profile.jpg" />
     <Content Include="img\sumfears.jpg" />
     <Content Include="img\sunset.jpg" />
     <Content Include="img\tacocat.jpg" />
     <Content Include="index.html" />
     <Content Include="js\resume.js" />
     <Content Include="js\resume.min.js" />
+    <None Include="Scripts\jquery-3.5.0.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.0.js" />
+    <Content Include="Scripts\jquery-3.5.0.min.js" />
+    <Content Include="Scripts\jquery-3.5.0.slim.js" />
+    <Content Include="Scripts\jquery-3.5.0.slim.min.js" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-grid.min.css" />
     <Content Include="vendor\bootstrap\css\bootstrap-reboot.css" />
@@ -106,10 +112,6 @@
     <Content Include="vendor\jquery-easing\jquery.easing.compatibility.js" />
     <Content Include="vendor\jquery-easing\jquery.easing.js" />
     <Content Include="vendor\jquery-easing\jquery.easing.min.js" />
-    <Content Include="vendor\jquery\jquery.js" />
-    <Content Include="vendor\jquery\jquery.min.js" />
-    <Content Include="vendor\jquery\jquery.slim.js" />
-    <Content Include="vendor\jquery\jquery.slim.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -139,9 +141,9 @@
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.ttf" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff" />
     <Content Include="vendor\fontawesome-free\webfonts\fa-solid-900.woff2" />
-    <Content Include="vendor\jquery\jquery.min.map" />
-    <Content Include="vendor\jquery\jquery.slim.min.map" />
     <None Include="Properties\PublishProfiles\eananceportfolio - Web Deploy.pubxml" />
+    <Content Include="Scripts\jquery-3.5.0.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.0.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
