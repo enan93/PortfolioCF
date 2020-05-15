@@ -67,8 +67,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\resume.css" />
     <Content Include="css\resume.min.css" />
+    <Content Include="css\shCore.css" />
+    <Content Include="css\shThemeDefault.css" />
+    <Content Include="img\android-chrome-192x192.png" />
+    <Content Include="img\android-chrome-512x512.png" />
+    <Content Include="img\apple-touch-icon.png" />
+    <Content Include="img\coming soon.png" />
+    <Content Include="img\dark-wood.png" />
+    <Content Include="img\EAN Insignia.png" />
+    <Content Include="img\favicon-16x16.png" />
+    <Content Include="img\favicon-32x32.png" />
+    <Content Include="favicon.ico" />
     <Content Include="img\fizzbuzz.jpg" />
     <Content Include="img\profile.jpg" />
     <Content Include="img\sumfears.jpg" />
@@ -77,7 +87,14 @@
     <Content Include="index.html" />
     <Content Include="js\resume.js" />
     <Content Include="js\resume.min.js" />
+    <Content Include="img\site.webmanifest" />
     <None Include="Scripts\jquery-3.5.0.intellisense.js" />
+    <Content Include="js\shBrushJScript.js" />
+    <Content Include="js\shCore.js" />
+    <Content Include="js\sunset.js" />
+    <Content Include="js\tacocat.js" />
+    <Content Include="js\soaf.js" />
+    <Content Include="js\fizzbuzz.js" />
     <Content Include="Scripts\jquery-3.5.0.js" />
     <Content Include="Scripts\jquery-3.5.0.min.js" />
     <Content Include="Scripts\jquery-3.5.0.slim.js" />

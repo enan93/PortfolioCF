@@ -147,7 +147,6 @@ section.resume-section {
 @media (min-width:768px) {
     section.resume-section {
         min-height: 100vh;
-        
     }
 
         section.resume-section .resume-item .resume-date {
@@ -164,10 +163,7 @@ section.resume-section {
 
 #portbackground {
     background-color: #353535;
-    /*background-image: url('../img/darkbg.png');*/
-    /*background-repeat: no-repeat;*/
-    background-position: top;
-    
+    background-image: url('../../img/dark-wood.png');
 }
 
 .bg-primary {
@@ -186,19 +182,54 @@ a {
         color: #3c9449
     }
 
-#modalbtn1, #modalbtn2, #modalbtn3, #modalbtn4 {
-    cursor:pointer;
+.btn-success {
+    background-color: #348440;
+    border-color: #348440
+}
+
+    .btn-success:hover {
+        background-color: #3c9449;
+        border-color: #3c9449
+    }
+
+.btn-outline-success {
+    border-color: #348440
+}
+
+    .btn-outline-success:hover {
+        background-color: #348440;
+        border-color: #348440
+    }
+
+.button-img {
+    cursor: pointer;
     border-radius: 5px;
     margin-right: 20px;
     margin-bottom: 20px;
-
-
 }
 
-#modalbtn1:hover, #modalbtn2:hover, #modalbtn3:hover, #modalbtn4:hover {
-    opacity: 0.7
-}
+    .button-img:hover {
+        opacity: 0.7
+    }
 
 .modal-header, .modal-body, .modal-footer {
     background-color: #353535;
+    border-bottom-color: #242424;
+    border-top-color: #242424
+}
+
+.modal-content {
+    border-radius: .4rem
+}
+
+.close {
+    text-shadow: 0 1px 0 #242424
+}
+
+.codetoggle {
+    display: none
+}
+
+.syntaxhighlighter.js {
+    border-radius: .25rem
 }

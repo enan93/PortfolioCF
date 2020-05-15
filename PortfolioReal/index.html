@@ -21,6 +21,19 @@
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
+    <!--DEVICONS-->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!--SyntaxHighlighter-->
+    <link rel="stylesheet" href="../css/shCore.css" />
+    <link rel="stylesheet" href="../css/shThemeDefault.css" />
+
+    <!--FavIcon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+
 </head>
 
 <body id="page-top">
@@ -49,12 +62,15 @@
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#challenges">Coding Challenges</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                </li>
-
-
             </ul>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/enan93" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+                <a href="https://www.linkedin.com/in/ethan-nance-58aa841a9/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>  
         </div>
     </nav>
 
@@ -70,16 +86,12 @@
                     Greensboro, NC · (336) 609-2284 ·
                     <a href="mailto:enan3991@gmail.com">enan3991@gmail.com</a>
                 </div>
-                <p class="lead mb-5">Web developer in training, currently studying at Coder Foundry. <br /> Teachable, young and willing to take on challenges. <br /> In addition to coding, I have experience in warehouse order fulfillment and independently wrestle as a hobby.</p>
-                <div class="social-icons">
-
-                    <a href="https://github.com/enan93" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-
-
-                </div>
+                <p class="lead mb-5">Full-stack .NET developer, currently studying at Coder Foundry. <br /> Teachable, dedicated and willing to take on challenges. <br /> In addition to coding, I have experience in warehouse order fulfillment and independently wrestle as a hobby.</p>
+                <!--<div class="subheading mb-5">
+                    <a class="nav-link" href="#">Download My Resume</a>
+                </div>-->
             </div>
+
         </section>
 
         <hr class="m-0">
@@ -88,32 +100,61 @@
             <div class="w-100">
                 <h2 class="mb-5">Skills</h2>
 
+                <p>A collection of the programming languages that I've learned so far.</p>
+
                 <div class="subheading mb-3">Programming Languages</div>
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item">
-                        <i class="fab fa-html5"></i>
+                        <i class="devicon-html5-plain"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-css3-alt"></i>
+                        <i class="devicon-css3-plain"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-js-square"></i>
+                        <i class="devicon-javascript-plain"></i>
                     </li>
                     <li class="list-inline-item">
-                        <i class="fab fa-bootstrap"></i>
+                        <i class="devicon-bootstrap-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="devicon-csharp-plain"></i>
+                    </li>
+                    <li class="list-inline-item">
+                        <i class="fas fa-database"></i>
                     </li>
 
                 </ul>
-
             </div>
-
         </section>
 
         <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="portfolio">
             <div class="w-100">
                 <h2 class="mb-5">Portfolio</h2>
 
-                <p>Check back periodically in the future, as projects will be added to this area upon their completion.</p>
+                <p>These are some of the projects I've built during school. More will likely be added in the future, so check back periodically for updates.</p>
+
+                <div class="row">
+                    <div class="col-3">
+                        <div class="row">
+                            <h4>Blog Project</h4>
+                        </div>
+                        <div class="row">
+                            <a href="https://eanblog.azurewebsites.net" target="_blank">
+                                <img src="img/EAN Insignia.png" width="220" height="200" target="_blank" class="button-img" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <h4>Bug Tracker</h4>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <img src="img/coming soon.png" width="220" height="200" target="_blank" class="button-img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -125,13 +166,15 @@
             <div class="w-100">
                 <h2 class="mb-5">Coding Challenges</h2>
 
+                <p>Coding challenges I completed while in school. Each image, when clicked, will produce a modal (which is a type of pop-up window) that shows off a function that you can experiment with, as well as the code that makes the function work.</p>
+
                 <div class="row">
                     <div class="col-3">
                         <div class="row">
                             <h4>FizzBuzz</h4>
                         </div>
                         <div class="row">
-                            <img src="img/fizzbuzz.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal1" id="modalbtn1">
+                            <img src="img/fizzbuzz.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal1" id="modalbtn1" class="button-img" onclick="fizzBuzz();">
                         </div>
                     </div>
                     <div class="col">
@@ -139,7 +182,7 @@
                             <h4>TacoCat</h4>
                         </div>
                         <div class="row">
-                            <img src="img/tacocat.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal2" id="modalbtn2">
+                            <img src="img/tacocat.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal2" id="modalbtn2" class="button-img" onclick="tacoCat();">
                         </div>
                     </div>
                 </div>
@@ -149,7 +192,7 @@
                             <h4>Sunset Hills</h4>
                         </div>
                         <div class="row">
-                            <img src="img/sunset.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal3" id="modalbtn3">
+                            <img src="img/sunset.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal3" id="modalbtn3" class="button-img" onclick="sunsetHills();">
                         </div>
                     </div>
                     <div class="col">
@@ -157,7 +200,7 @@
                             <h4>Sum of All Fears</h4>
                         </div>
                         <div class="row">
-                            <img src="img/sumfears.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal4" id="modalbtn4">
+                            <img src="img/sumfears.jpg" width="220" height="200" data-toggle="modal" data-target="#challengemodal4" id="modalbtn4" class="button-img" onclick="sumOfAllFears();">
                         </div>
                     </div>
                 </div>
@@ -175,18 +218,18 @@
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col">
-                                            <p id="fbintro">Please enter two numbers between 1 and 100.</p>
+                                            <p id="fbintro">Please enter two numbers between 1 and 100 and click "Solve FizzBuzz." The function will then cycle through all numbers between 1 and 100 and replace any numbers divisible by your first entered number with "Fizz", any numbers divisible by the second with "Buzz", and any divisible by both with "FizzBuzz."</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-3">
-                                            <input id="fbnum1" type="text" class="form-control" />
+                                            <input id="fbnum1" type="text" class="form-control" placeholder="Fizz" onfocus="this.placeholder = ''" />
                                             <br />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-3">
-                                            <input id="fbnum2" type="text" class="form-control" />
+                                            <input id="fbnum2" type="text" class="form-control" placeholder="Buzz" onfocus="this.placeholder = ''" />
                                             <br />
                                         </div>
                                     </div>
@@ -194,17 +237,90 @@
                                         <div class="col-5">
                                             <button class="btn btn-success" id="FBSolveButton">Solve FizzBuzz</button>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-2">
                                             <button class="btn btn-outline-success" id="FBClearButton">Clear</button>
                                         </div>
                                         <div class="col">
-                                            <!--<button class="btn btn-secondary" id="FBCodeButton">Show Code</button>-->
+                                            <button class="btn btn-outline-secondary" id="FBCodeButton">Show/Hide Code</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
                                             <p id="fboutput"></p>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="container codetoggle" id="fizzbuzzcode">
+                                    <div class="syntaxhighlighter js">
+                                        <pre class="brush: js">
+//This is the beginning of the FizzBuzz function.
+function fizzBuzz() {
+
+        //This takes the numbers the user entered and stores them in variables.
+        var fizz = Number($("#fbnum1").val());
+        var buzz = Number($("#fbnum2").val());
+
+        //This generates an array to display numbers 1-100.
+        var fbArray = "";
+
+        //The following two if statements ensure neither of the two numbers input
+        //by the user are above 100 or below 0.
+        if (fizz > 100 || buzz > 100) {
+            alert("Number entered too high.")
+            return
+        }
+
+        if (fizz < 1 || buzz < 1) {
+            alert("Number entered too low.")
+            return
+        }
+
+        //Loops through numbers 1-100 looking for which numbers within are
+        //divisible by the user input numbers, then declares them as "Fizz",
+        //"Buzz", or "FizzBuzz" accordingly if so.
+        //Afterwards, stores all of this data in the previously set array.
+        for (loop = 1; loop < 101; loop++) {
+            if ((loop % fizz == 0) && (loop % buzz == 0)) {
+                if (loop == 100) {
+                    fbArray += "<b>FizzBuzz</b>";
+                }
+                else {
+                    fbArray += "<b>FizzBuzz</b>" + ", ";
+                }
+            }
+
+            else if (loop % fizz == 0) {
+                if (loop == 100) {
+                    fbArray += "<i>Fizz</i>";
+                }
+                else {
+                    fbArray += "<i>Fizz</i>" + ", ";
+                }
+            }
+
+            else if (loop % buzz == 0) {
+                if (loop == 100) {
+                    fbArray += "<i>Buzz</i>";
+                }
+                else {
+                    fbArray += "<i>Buzz</i>" + ", ";
+                }
+            }
+
+            else {
+                if (loop == 0) {
+                    fbArray += loop;
+                }
+                fbArray += loop + ", ";
+            }
+
+        }
+        //Displays the results of the above code onscreen.
+        $("#fboutput").show()
+        $("#fboutput").html(`${fbArray}`);
+    });
+}
+</pre>
                                     </div>
                                 </div>
                             </div>
@@ -230,12 +346,12 @@
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col">
-                                            <p id="tacointro">Type a word to determine whether or not it is a palindrome.</p>
+                                            <p id="tacointro">Type some text and click "Submit." This function will reverse your entered text and determine whether or not it is a palindrome. <br />i.e.: "tacocat" reversed is "tacocat."</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-3">
-                                            <input id="tacoinput" type="text" class="form-control" />
+                                            <input id="tacoinput" type="text" class="form-control" placeholder="tacocat" onfocus="this.placeholder = ''" />
                                             <br />
                                         </div>
                                     </div>
@@ -243,13 +359,74 @@
                                         <div class="col-3">
                                             <button class="btn btn-success" id="TacoSubmitButton">Submit</button>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-3">
                                             <button class="btn btn-outline-success" id="TacoClearButton">Clear</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-secondary" id="TacoCodeButton">Show/Hide Code</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
                                             <p id="tacooutput"></p>
+                                        </div>
+                                    </div>
+                                    <div class="container codetoggle" id="tacocatcode">
+                                        <div class="syntaxhighlighter js">
+                                            <pre class="brush: js">
+//This is the beginning of the TacoCat function.
+function tacoCat() {
+
+        //This collects the user input text, and stores it in a variable.
+        var str = ($("#tacoinput").val());
+
+        //This calls an error if no text is entered by the user.
+        if (str == "") {
+            alert("No data entered.")
+            return
+        }
+
+        //This takes the user input text and makes all letters entered in lowercase.
+        var enteredText = str.toLowerCase();
+
+        //This removes any spaces entered, allowing the user to enter palindromic
+        //phrases such as "UFO Tofu."
+        enteredText = enteredText.replace(/ /g, "");
+
+        //The following variables determine the length of the entered text,
+        //and then creates a variable to store the mirrored version of the text.
+        var length = enteredText.length;
+
+        var last = length - 1;
+
+        var enteredTextRev = "";
+
+        //This loops through the entered text, and then generates a mirrored
+        //version to place in the above variable.
+        for (loop = last; loop >= 0; loop--) {
+            enteredTextRev += enteredText[loop];
+        }
+
+        //This makes a variable to compare the entered text with its mirror,
+        //then displays a message confirming or denying its palindromic status.
+        var results;
+
+        if (enteredText === enteredTextRev) {
+            results = `${str} is a palindrome!`
+        }
+
+        else {
+            results = `${str} is <u>not</u> a palindrome!`
+        }
+
+
+
+        //This displays one of the above messages, depending on the
+        //results of the function.
+        $("#tacooutput").show();
+        $("#tacooutput").html(`${results}`);
+]
+</pre>
                                         </div>
                                     </div>
                                 </div>
@@ -275,33 +452,33 @@
                             <div class="modal-body">
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <div class="col-6">
-                                            <p id="sunsetintro">Let's find out which buildings can see the sunset.</p>
+                                        <div class="col">
+                                            <p id="sunsetintro">Enter heights for 6 buildings and click "Solve Sunset Hills." This function will then determine which buildings can see the sun setting to the left of them, and which buildings are obstructed by a building of equal or greater height.</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <input id="sunsetnum1" type="text" class="form-control" />
+                                            <input id="sunsetnum1" type="text" class="form-control" placeholder="1" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="sunsetnum2" type="text" class="form-control" />
+                                            <input id="sunsetnum2" type="text" class="form-control" placeholder="2" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="sunsetnum3" type="text" class="form-control" />
+                                            <input id="sunsetnum3" type="text" class="form-control" placeholder="3" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="sunsetnum4" type="text" class="form-control" />
+                                            <input id="sunsetnum4" type="text" class="form-control" placeholder="4" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="sunsetnum5" type="text" class="form-control" />
+                                            <input id="sunsetnum5" type="text" class="form-control" placeholder="5" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="sunsetnum6" type="text" class="form-control" />
+                                            <input id="sunsetnum6" type="text" class="form-control" placeholder="6" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                     </div>
@@ -310,13 +487,59 @@
                                         <div class="col">
                                             <button class="btn btn-success" id="SunsetSolveButton">Solve Sunset Hills</button>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-2">
                                             <button class="btn btn-outline-success" id="SunsetClearButton">Clear</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-secondary" id="SunsetCodeButton">Show/Hide Code</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
                                             <p id="sunsetoutput"></p>
+                                        </div>
+                                    </div>
+                                    <div class="container codetoggle" id="sunsetcode">
+                                        <div class="syntaxhighlighter js">
+                                            <pre class="brush: js">
+//This is the beginning of the Sunset Hills function.
+function sunsetHills() {
+
+        //This generates an array from the user input building heights.
+        let sunsetArray = new Array();
+        sunsetArray.push(Number($("#sunsetnum1").val()));
+        sunsetArray.push(Number($("#sunsetnum2").val()));
+        sunsetArray.push(Number($("#sunsetnum3").val()));
+        sunsetArray.push(Number($("#sunsetnum4").val()));
+        sunsetArray.push(Number($("#sunsetnum5").val()));
+        sunsetArray.push(Number($("#sunsetnum6").val()));
+
+        //This ensures the first building will always see the sunset regardless of height,
+        //as no buildings are between it and the sunset.
+        let tallest = sunsetArray[0];
+
+        //This forms a new array of the other buildings to later determine their comparative
+        //heights and positions.
+        let sunsetArray2 = new Array();
+        sunsetArray2.push(tallest);
+
+        //This loops through all entered building heights, skipping the first, as
+        //no buildings are between it and the sunset.
+        for (var loop = 1; loop < sunsetArray.length; loop++) {
+
+            //In the event a building is taller than the buildings in front of it,
+            //this pushes it into the array of buildings that can see the sunset.
+            if (sunsetArray[loop] > tallest) {
+                tallest = sunsetArray[loop];
+                sunsetArray2.push(tallest);
+            }
+        };
+
+        //This displays the results, listing all buildings that can see the sunset.
+        $("#sunsetoutput").show()
+        $("#sunsetoutput").html(`The buildings with heights of: ${sunsetArray2} can see the sunset.`)
+}
+</pre>
                                         </div>
                                     </div>
                                 </div>
@@ -343,34 +566,34 @@
                                 <div class="container-fluid">
                                     <div class="row">
                                         <div class="col">
-                                            <p id="soaftitle">Enter a sum number, then enter up to 5 numbers and determine if any combination of two of those numbers will add up to your sum.</p>
+                                            <p id="soaftitle">Enter a sum number, then enter up to 5 numbers and click "Submit" to determine if any combination of two of those numbers will add up to your sum.</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <input id="soaftopnum" type="text" class="form-control" placeholder="Please enter your sum number." />
+                                            <input id="soaftopnum" type="text" class="form-control" placeholder="Please enter your sum number." onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
-                                            <input id="soafnum1" type="text" class="form-control" />
+                                            <input id="soafnum1" type="text" class="form-control" placeholder="1" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="soafnum2" type="text" class="form-control" />
+                                            <input id="soafnum2" type="text" class="form-control" placeholder="2" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="soafnum3" type="text" class="form-control" />
+                                            <input id="soafnum3" type="text" class="form-control" placeholder="3" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="soafnum4" type="text" class="form-control" />
+                                            <input id="soafnum4" type="text" class="form-control" placeholder="4" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                         <div class="col">
-                                            <input id="soafnum5" type="text" class="form-control" />
+                                            <input id="soafnum5" type="text" class="form-control" placeholder="5" onfocus="this.placeholder = ''"/>
                                             <br />
                                         </div>
                                     </div>
@@ -378,13 +601,66 @@
                                         <div class="col-3">
                                             <button class="btn btn-success" id="SOAFSubmitBtn">Submit</button>
                                         </div>
-                                        <div class="col">
+                                        <div class="col-3">
                                             <button class="btn btn-outline-success" id="SOAFClearBtn">Clear</button>
+                                        </div>
+                                        <div class="col">
+                                            <button class="btn btn-outline-secondary" id="SOAFCodeBtn">Show/Hide Code</button>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col">
                                             <p id="soafoutput"></p>
+                                        </div>
+                                    </div>
+                                    <div class="container codetoggle" id="soafcode">
+                                        <div class="syntaxhighlighter js">
+                                            <pre class="brush: js">
+//This is the beginning of the Sum of All Fears function.
+function sumOfAllFears() {
+
+        //This collects the top user input number and stores it in a variable.
+        let topnum = Number($("#soaftopnum").val());
+
+        //This generates an array and then collects the below user input numbers
+        //and stores them into the array.
+        let soafArray = [];
+        soafArray.push(Number($("#soafnum1").val()));
+        soafArray.push(Number($("#soafnum2").val()));
+        soafArray.push(Number($("#soafnum3").val()));
+        soafArray.push(Number($("#soafnum4").val()));
+        soafArray.push(Number($("#soafnum5").val()));
+
+        //This defaults the top number to 0 in the event no data was entered.
+        //It also defaults the results as false until the loop is ran.
+        let sumfears = 0;
+        let found = false;
+
+        //This loops through all potential sum combinations of the below numbers
+        //and determines if any of them add up to the top number.
+        for (var loop = 0; loop < soafArray.length; loop++) {
+
+            sumfears = topnum - soafArray[loop];
+            //In the event the top number is found as a sum of the below numbers,
+            //this ends the loop function before cycling through the remaining loops.
+            if (soafArray.indexOf(sumfears, loop + 1) > 0) {
+                found = true;
+                break;
+            }
+
+
+        }
+
+        //This displays the results of the addition loop in the form of a message
+        //stating whether or not any of the below numbers added up to the top number.
+        $("#soafoutput").show()
+
+        if (found)
+            $("#soafoutput").html(`The sum of ${topnum} was found in the numbers entered.`);
+        else
+            $("#soafoutput").html(`The sum of ${topnum} was <u>not</u> found in the numbers entered.`);
+}
+</pre>
                                         </div>
                                     </div>
                                 </div>
@@ -405,25 +681,6 @@
 
         <hr class="m-0">
 
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-            <div class="w-100">
-                <h2 class="mb-5">Education</h2>
-
-                <p>Homeschooled: 1997-2011 <br />GED from GTCC's Greensboro Campus: 2012 <br />Coder Foundry: 2020-Present</p>
-
-
-
-            </div>
-        </section>
-
-        <hr class="m-0">
-
-
-
-        <hr class="m-0">
-
-
-
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -436,199 +693,16 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
 
-    <script>
-        $("#FBSolveButton").on("click", function () {
-            var fizz = Number($("#fbnum1").val());
-            var buzz = Number($("#fbnum2").val());
+    <!--Coding Challenge Scripts-->
+    <script src="js/fizzbuzz.js"></script>
+    <script src="js/tacocat.js"></script>
+    <script src="js/sunset.js"></script>
+    <script src="js/soaf.js"></script>
 
-            var fbArray = "";
-
-            if (fizz > 100 || buzz > 100) {
-                alert("Number entered too high.")
-                return
-            }
-
-            if (fizz < 1 || buzz < 1) {
-                alert("Number entered too low.")
-                return
-            }
-
-            for (loop = 1; loop < 101; loop++) {
-                if ((loop % fizz == 0) && (loop % buzz == 0)) {
-                    if (loop == 100) {
-                        fbArray += "<b>FizzBuzz</b>";
-                    }
-                    else {
-                        fbArray += "<b>FizzBuzz</b>" + ", ";
-                    }
-                }
-
-                else if (loop % fizz == 0) {
-                    if (loop == 100) {
-                        fbArray += "<i>Fizz</i>";
-                    }
-                    else {
-                        fbArray += "<i>Fizz</i>" + ", ";
-                    }
-                }
-
-                else if (loop % buzz == 0) {
-                    if (loop == 100) {
-                        fbArray += "<i>Buzz</i>";
-                    }
-                    else {
-                        fbArray += "<i>Buzz</i>" + ", ";
-                    }
-                }
-
-                else {
-                    if (loop == 0) {
-                        fbArray += loop;
-                    }
-                    fbArray += loop + ", ";
-                }
-
-            }
-
-            $("#fboutput").show()
-            $("#fboutput").html(`${fbArray}`);
-
-            $("#FBClearButton").on("click", function () {
-                var fizz = Number($("#fbnum1").val(""));
-                var buzz = Number($("#fbnum2").val(""));
-                $("#fboutput").hide()
-            })
-        });
-    </script>
-
-    <script>
-        $("#SunsetSolveButton").on("click", function () {
-            let sunsetArray = new Array();
-            sunsetArray.push(Number($("#sunsetnum1").val()));
-            sunsetArray.push(Number($("#sunsetnum2").val()));
-            sunsetArray.push(Number($("#sunsetnum3").val()));
-            sunsetArray.push(Number($("#sunsetnum4").val()));
-            sunsetArray.push(Number($("#sunsetnum5").val()));
-            sunsetArray.push(Number($("#sunsetnum6").val()));
-
-            let tallest = sunsetArray[0];
-            let sunsetArray2 = new Array();
-            sunsetArray2.push(tallest);
-
-            for (var loop = 1; loop < sunsetArray.length; loop++) {
-
-                if (sunsetArray[loop] > tallest) {
-                    tallest = sunsetArray[loop];
-                    sunsetArray2.push(tallest);
-                }
-            };
-
-            $("#sunsetoutput").show()
-            $("#sunsetoutput").html(`The buildings with heights of: ${sunsetArray2} can see the sunset.`)
-
-            $("#SunsetClearButton").on("click", function () {
-                Number($("#sunsetnum1").val(""));
-                Number($("#sunsetnum2").val(""));
-                Number($("#sunsetnum3").val(""));
-                Number($("#sunsetnum4").val(""));
-                Number($("#sunsetnum5").val(""));
-                Number($("#sunsetnum6").val(""));
-                $("#sunsetoutput").hide()
-            })
-        });
-    </script>
-
-    <script>
-        $("#TacoSubmitButton").on("click", function () {
-            var str = ($("#tacoinput").val());
-
-            if (str == "") {
-                alert("No data entered.")
-                return
-            }
-
-            var enteredText = str.toLowerCase();
-
-            enteredText = enteredText.replace(/ /g, "");
-            var length = enteredText.length;
-
-            var last = length - 1;
-
-            var enteredTextRev = "";
-
-            for (loop = last; loop >= 0; loop--) {
-                enteredTextRev += enteredText[loop];
-            }
-
-            var results;
-
-            if (enteredText === enteredTextRev) {
-                results = `${str} is a palindrome!`
-            }
-
-            else {
-                results = `${str} is <u>not</u> a palindrome!`
-            }
-
-
-
-
-            $("#tacooutput").show();
-            $("#tacooutput").html(`${results}`);
-
-            $("#TacoClearButton").on("click", function () {
-                var str = ($("#tacoinput").val(""));
-                $("#tacooutput").hide();
-
-            })
-        });
-
-    </script>
-
-    <script>
-        $("#SOAFSubmitBtn").on("click", function () {
-            let topnum = Number($("#soaftopnum").val());
-
-            let soafArray = [];
-            soafArray.push(Number($("#soafnum1").val()));
-            soafArray.push(Number($("#soafnum2").val()));
-            soafArray.push(Number($("#soafnum3").val()));
-            soafArray.push(Number($("#soafnum4").val()));
-            soafArray.push(Number($("#soafnum5").val()));
-
-            let sumfears = 0;
-            let found = false;
-
-            for (var loop = 0; loop < soafArray.length; loop++) {
-
-                sumfears = topnum - soafArray[loop];
-
-                if (soafArray.indexOf(sumfears, loop + 1) > 0) {
-                    found = true;
-                    break;
-                }
-
-
-            }
-
-            $("#soafoutput").show()
-
-            if (found)
-                $("#soafoutput").html(`The sum of ${topnum} was found in the numbers entered.`);
-            else
-                $("#soafoutput").html(`The sum of ${topnum} was <u>not</u> found in the numbers entered.`);
-
-            $("#SOAFClearBtn").on("click", function () {
-                Number($("#soaftopnum").val(""));
-                Number($("#soafnum1").val(""));
-                Number($("#soafnum2").val(""));
-                Number($("#soafnum3").val(""));
-                Number($("#soafnum4").val(""));
-                Number($("#soafnum5").val(""));
-                $("#soafoutput").hide()
-            })
-        });
-    </script>
+    <!--SyntaxHighlighter-->
+    <script src="js/shCore.js"></script>
+    <script src="js/shBrushJScript.js"></script>
+    <script type="text/javascript">SyntaxHighlighter.all();</script>
 
 </body>
 
